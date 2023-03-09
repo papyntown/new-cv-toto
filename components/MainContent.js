@@ -22,19 +22,14 @@ const MainContent = () => {
 
                 <div className="description">
                     <p>
-                        J'espère que ce CV en ligne, où vous pourrez trouver
-                        certains de mes projets React et Next.js, suscitera
-                        votre intérêt. J'ai travaillé dur pour développer mes
-                        compétences en développement web et pour créer des
-                        projets qui démontrent mes capacités. J'ai
-                        particulièrement apprécié travailler avec React et
-                        Next.js, car ce sont des technologies qui offrent une
-                        grande flexibilité et une grande évolutivité. J'ai hâte
-                        de partager mes projets avec vous et de discuter de la
-                        manière dont mes compétences pourraient être mises à
-                        profit dans votre entreprise. Merci de prendre le temps
-                        de parcourir mon CV en ligne et j'espère avoir bientôt
-                        de vos nouvelles.
+                        Mon CV en ligne présente mes projets en React et Next.js
+                        pour démontrer mes compétences en développement web.
+                        J'apprécie particulièrement travailler avec ces
+                        technologies pour leur flexibilité et évolutivité.
+                        J'espère que mes projets susciteront votre intérêt et
+                        j'ai hâte de discuter de mes compétences avec vous.
+                        Merci d'avoir parcouru mon CV en ligne et j'attends avec
+                        impatience votre réponse.
                     </p>
                 </div>
             </div>
