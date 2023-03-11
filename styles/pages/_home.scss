@@ -59,9 +59,9 @@
             .img-cv-contain {
                 position: relative;
                 height: auto;
-
+                margin-right: 0.5rem;
                 .img-cv {
-                    box-shadow: 0 0 0 1px white;
+                    box-shadow: 0 0 0 2px $color-3;
                     border-radius: 50%;
                     height: 200px;
                     width: 200px;

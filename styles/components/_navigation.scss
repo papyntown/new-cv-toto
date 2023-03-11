@@ -6,7 +6,7 @@
     left: 1.4rem;
     font-size: 1.4rem;
     line-height: 28px;
-    color: $color-4;
+    color: $color-6;
 
     &:before {
         content: "";
@@ -34,13 +34,13 @@
         }
     }
     .nav-active {
-        color: $black;
+        color: $color-5;
     }
     ul:hover li:not(:hover) {
         opacity: 0.5;
     }
     ul:hover li:hover {
-        color: $black;
+        color: $color-5;
     }
 
     .nav-portfolio {
@@ -73,6 +73,9 @@
                 transform: rotatey(30deg) scaleX(1.2);
                 transform-origin: center;
                 transition: 0.3s;
+                :hover {
+                    color: $color-5;
+                }
             }
         }
     }

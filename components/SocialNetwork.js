@@ -27,14 +27,7 @@ const SocialNetwork = () => {
                     className="hover"
                     onMouseOver={() => anim()}>
                     <li>
-                        <FontAwesomeIcon
-                            icon={faLinkedin}
-                            style={{
-                                fontSize: 30,
-                                color: "blue",
-                                opacity: 0.7,
-                            }}
-                        />
+                        <FontAwesomeIcon icon={faLinkedin} className="icon" />
                     </li>
                 </a>
                 <a
@@ -44,14 +37,7 @@ const SocialNetwork = () => {
                     className="hover"
                     onMouseOver={() => anim()}>
                     <li>
-                        <FontAwesomeIcon
-                            icon={faGithub}
-                            style={{
-                                fontSize: 30,
-                                color: "blue",
-                                opacity: 0.7,
-                            }}
-                        />
+                        <FontAwesomeIcon icon={faGithub} className="icon" />
                     </li>
                 </a>
                 <a
@@ -61,16 +47,20 @@ const SocialNetwork = () => {
                     className="hover"
                     onMouseOver={() => anim()}>
                     <li>
-                        <FontAwesomeIcon
-                            icon={faFileAlt}
-                            style={{
-                                fontSize: 30,
-                                color: "blue",
-                                opacity: 0.7,
-                            }}
-                        />
+                        <FontAwesomeIcon icon={faFileAlt} className="icon" />
                     </li>
                 </a>
+                {/* <div
+                    className="btn"
+                    onClick={() => {
+                        const themeSombre =
+                            !corps.classList.contains("theme-clair");
+                        corps.classList.toggle("theme-clair");
+
+                        corps.style.setProperty("--theme-sombre", themeSombre);
+                    }}>
+                    Clique moi!
+                </div> */}
             </ul>
         </div>
     );

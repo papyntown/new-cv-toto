@@ -8,18 +8,14 @@ const NavBar = () => {
     return (
         <nav className="navigation">
             <ul>
-                <li>
-                    <Link
-                        className={
-                            router.pathname == "/"
-                                ? "nav-active hover"
-                                : "hover"
-                        }
-                        href={"/"}>
-                        {" "}
-                        Présentation{" "}
-                    </Link>
-                </li>
+                <Link
+                    className={
+                        router.pathname == "/" ? "nav-active hover" : "hover"
+                    }
+                    href={"/"}>
+                    <li>Présentation</li>
+                </Link>
+
                 <li className="nav-portfolio">
                     Projects
                     <ul className="nav-projects">
@@ -61,17 +57,16 @@ const NavBar = () => {
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <Link
-                        className={
-                            router.pathname == "/about"
-                                ? "nav-active hover"
-                                : "hover"
-                        }
-                        href={"/about"}>
-                        Me contacter{" "}
-                    </Link>
-                </li>
+
+                <Link
+                    className={
+                        router.pathname == "/about"
+                            ? "nav-active hover"
+                            : "hover"
+                    }
+                    href={"/about"}>
+                    <li>Me contacter </li>
+                </Link>
             </ul>
         </nav>
     );
