@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import Darkmode from "./DarkMode";
 
 const SocialNetwork = () => {
     const anim = () => {
@@ -50,17 +51,6 @@ const SocialNetwork = () => {
                         <FontAwesomeIcon icon={faFileAlt} className="icon" />
                     </li>
                 </a>
-                {/* <div
-                    className="btn"
-                    onClick={() => {
-                        const themeSombre =
-                            !corps.classList.contains("theme-clair");
-                        corps.classList.toggle("theme-clair");
-
-                        corps.style.setProperty("--theme-sombre", themeSombre);
-                    }}>
-                    Clique moi!
-                </div> */}
             </ul>
         </div>
     );

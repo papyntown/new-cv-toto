@@ -7,7 +7,6 @@
         content: "";
         height: 800px;
         width: 800px;
-        background: $color-3;
         border-radius: 50%;
         position: absolute;
         bottom: -480px;
@@ -61,7 +60,6 @@
                 height: auto;
                 margin-right: 0.5rem;
                 .img-cv {
-                    box-shadow: 0 0 0 2px $color-3;
                     border-radius: 50%;
                     height: 200px;
                     width: 200px;

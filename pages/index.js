@@ -1,3 +1,4 @@
+import Darkmode from "@/components/DarkMode";
 import MainContent from "@/components/MainContent";
 import Meta from "@/components/Meta";
 import NavBar from "@/components/NavBar";
@@ -10,6 +11,7 @@ const index = () => {
             <Meta />
             <div className="home">
                 {/* <NavBar /> */}
+                <Darkmode />
                 <SocialNetwork />
                 <MainContent />
             </div>
