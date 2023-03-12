@@ -38,6 +38,9 @@
         align-items: center;
         justify-items: center;
         height: 100%;
+        @media screen and (max-width: 650px) {
+            margin-top: 8rem;
+        }
 
         .main-content {
             user-select: none;
@@ -46,6 +49,9 @@
                 padding-left: 1rem;
                 display: flex;
                 align-items: center;
+                @media screen and (max-width: 650px) {
+                    flex-direction: column;
+                }
             }
             .description {
                 margin-top: 2rem;
@@ -53,6 +59,10 @@
                     font-size: 1.25rem;
                     line-height: 1.5rem;
                     letter-spacing: 1px;
+
+                    @media screen and (max-width: 650px) {
+                        text-align: center;
+                    }
                 }
             }
             .img-cv-contain {

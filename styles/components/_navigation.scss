@@ -32,13 +32,10 @@
         }
     }
     ul a {
-        color: $dark-color-6;
         text-decoration: none;
         transition: 0.3s;
-        &:hover {
-            color: $dark-color-5;
-        }
     }
+
     ul:hover li:not(:hover) {
         opacity: 0.5;
     }
