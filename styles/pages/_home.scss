@@ -15,8 +15,8 @@
         animation: homeAnim 26s infinite alternate;
 
         @media screen and (max-width: 650px) {
-            height: 400px;
-            width: 400px;
+            height: 340px;
+            width: 360px;
             bottom: -270px;
         }
 
@@ -28,9 +28,9 @@
                 transform: scale(1.1);
             }
         }
-        @media screen and (max-width: 430px) {
-            display: none;
-        }
+        // @media screen and (max-width: 430px) {
+        //     display: none;
+        // }
     }
 
     .home-main {
@@ -51,6 +51,7 @@
                 align-items: center;
                 @media screen and (max-width: 650px) {
                     flex-direction: column;
+                    text-align: center;
                 }
             }
             .description {
