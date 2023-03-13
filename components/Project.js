@@ -24,8 +24,17 @@ const Project = ({ project }) => {
                         alt={`Img du projet ${project.title}`}
                         width={100}
                         height={100}
-                        className="project-img"
+                        className="img"
                     />
+                </div>
+                <div className="button-container">
+                    <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover">
+                        <span className="button">Voir le Site</span>
+                    </a>
                 </div>
             </div>
         </div>

@@ -35,7 +35,10 @@
         animation: navProject 1s ease forwards;
 
         @media screen and (max-width: 650px) {
-            left: 70%;
+            position: absolute;
+            left: 30%;
+            translate: -50%;
+            font-size: 1rem;
         }
 
         @keyframes navProject {
@@ -45,8 +48,8 @@
         }
 
         &:before {
-            left: -120px;
-            top: -250px;
+            left: -80px;
+            top: -270px;
         }
 
         .nav-projects {
