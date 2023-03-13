@@ -5,7 +5,7 @@ export const projectsData = [
         date: "Fevrier 2023",
         languages: ["Nextjs", "Sass"],
         infos: "Fitforces et un site qui répertorie chaque exercice accompagné d'une description claire et d'animations GIF utiles pour vous guider dans la bonne forme et la bonne technique.",
-        img: "./assets/img/projet-2.jpg",
+        img: "../Fitforces.png",
         link: "https://fitforces.vercel.app/",
     },
     {
@@ -14,7 +14,7 @@ export const projectsData = [
         date: "Janvier 2023",
         languages: ["Nextjs", "TailWind"],
         infos: "Weather app est une application meteo des plus classiques realiser avec l'api openweathermap",
-        img: "./Weather-app.png",
+        img: "../Weather-app.png",
         link: "https://vercel.com/papyntown/weather-app",
     },
     {
@@ -23,7 +23,7 @@ export const projectsData = [
         date: "Decembre 2022",
         languages: ["React", "Sass"],
         infos: "React movie répetorie tous les fims avec leurs infos et leurs notes.",
-        img: "./React-movies.png",
+        img: "../React-movies.png",
         link: "https://papynlearn.online/",
     },
     // {
