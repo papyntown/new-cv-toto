@@ -15,7 +15,7 @@ export const projectsData = [
         languages: ["Nextjs", "TailWind"],
         infos: "Weather app est une application meteo des plus classiques realiser avec l'api openweathermap",
         img: "../Weather-app.png",
-        link: "https://vercel.com/papyntown/weather-app",
+        link: "https://weather-app-rose-seven.vercel.app/",
     },
     {
         id: 3,

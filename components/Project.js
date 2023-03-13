@@ -16,7 +16,21 @@ const Project = ({ project }) => {
             <div className="img-content">
                 <div className="img-container hover">
                     <span>
-                        <h3>{project.title}</h3>
+                        <div className="head-span">
+                            <h3>{project.title}</h3>
+                            <div className="languages-logo">
+                                {project.languages.map((icon) => (
+                                    <Image
+                                        key={icon}
+                                        src={`../language/${icon}.svg`}
+                                        alt={`Icon language ${icon}`}
+                                        width={100}
+                                        height={100}
+                                        className="img"
+                                    />
+                                ))}
+                            </div>
+                        </div>
                         <p>{project.infos}</p>
                     </span>
                     <Image

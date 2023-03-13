@@ -10,7 +10,7 @@
         border-radius: 50%;
         position: absolute;
         bottom: -200px;
-        left: -80px;
+        left: -55px;
         z-index: -1;
 
         @media screen and (max-width: 810px) {
@@ -97,6 +97,7 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 0 0.5rem;
+                gap: 2rem;
             }
 
             h1 {
@@ -146,6 +147,11 @@
                         width: 220px;
                         left: -30px;
                     }
+                }
+            }
+            ul {
+                @media screen and (max-width: 700px) {
+                    line-height: 1.4rem;
                 }
             }
             li {
@@ -200,6 +206,22 @@
                         @media screen and (max-width: 650px) {
                             display: none;
                         }
+                    }
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .languages-logo {
+                        display: flex;
+                        gap: 0.5rem;
+                    }
+                    .head-span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 0.5rem;
                     }
                 }
                 img {
