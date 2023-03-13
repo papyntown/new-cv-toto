@@ -39,6 +39,7 @@
             left: 30%;
             translate: -50%;
             font-size: 1rem;
+            position: fixed;
         }
 
         @keyframes navProject {
@@ -194,7 +195,13 @@
                     visibility: visible;
                     transform: translateY(0);
                 }
-
+                span {
+                    p {
+                        @media screen and (max-width: 650px) {
+                            display: none;
+                        }
+                    }
+                }
                 img {
                     overflow: hidden;
                     object-fit: cover;
