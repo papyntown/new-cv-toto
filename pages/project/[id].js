@@ -7,7 +7,7 @@ import { projectsData } from "@/data/projectsData";
 import Project from "@/components/Project";
 import Meta from "@/components/Meta";
 
-const project = ({ project }) => {
+const project = ({ project, projects }) => {
     const router = useRouter();
     const id = parseInt(router.query.id); // convertir en nombre entier
     const nextId = id;
@@ -19,7 +19,11 @@ const project = ({ project }) => {
             <Project project={project} />
             <NavButtons
                 left={id > 1 ? `/project/${nextId - 1}` : "/"}
-                right={`/project/${nextId + 1}`}
+                right={
+                    nextId < projects.length
+                        ? `/project/${nextId + 1}`
+                        : `/about`
+                }
             />
         </div>
     );
@@ -30,10 +34,12 @@ export default project;
 export const getStaticProps = async (context) => {
     // Le -1 car je suis dans un tableau est donc 1 c'est le 0
     const project = projectsData[context.params.id - 1];
+    const projects = projectsData;
 
     return {
         props: {
             project,
+            projects,
         },
     };
 };

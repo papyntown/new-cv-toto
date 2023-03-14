@@ -15,7 +15,7 @@ const NavButtons = (props) => {
             {props.right && (
                 <Link
                     className="right hover"
-                    href="/project/[id]"
+                    href={props.right == "/about" ? "/about" : "/project/[id]"}
                     as={props.right}>
                     <span>&#10093;</span>
                 </Link>

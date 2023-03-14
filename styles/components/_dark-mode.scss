@@ -80,7 +80,7 @@ a:visited.light-mode {
 }
 .social-network.dark-mode {
     ul a {
-        color: $dark-color-5;
+        color: red; // $dark-color-5;
         &:hover {
             color: $dark-color-6;
         }
@@ -173,5 +173,15 @@ a:visited.light-mode {
     color: $light-color-4;
     &:hover {
         font-size: 4rem;
+    }
+}
+.contact.dark-mode {
+    &::after {
+        background: $light-color-2;
+    }
+}
+.contact.light-mode {
+    &::after {
+        background: $dark-color-3;
     }
 }

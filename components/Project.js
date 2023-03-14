@@ -1,7 +1,17 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Project = ({ project }) => {
+    const [left, setLeft] = useState();
+    const [top, setTop] = useState();
+    const [size, setSize] = useState();
+    useEffect(() => {
+        // Pour que le useEffect fonction il faut mêtre project.title dans le callback
+        // Mais cela nuit au performance et on peut sentir un leger delay entre les pages
+        setLeft(Math.floor(Math.random() * 200 + 900) + "px");
+        setTop(Math.floor(Math.random() * 200 + 250) + "px");
+        setSize("scale(" + (Math.random() + 0.1) + ")");
+    }, []);
     return (
         <div className="project-main">
             <div className="project-content">
@@ -57,6 +67,9 @@ const Project = ({ project }) => {
                     </a>
                 </div>
             </div>
+            <span
+                className="random-circle"
+                style={{ left: left, top: top, transform: size }}></span>
         </div>
     );
 };

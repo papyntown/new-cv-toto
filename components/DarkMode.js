@@ -7,7 +7,7 @@ function Darkmode() {
     );
     useEffect(() => {
         const elements = document.querySelectorAll(
-            "body,a, .button, h1, p, h3, .random-circle, .project, .home , .navigation, .img-cv"
+            "body,a, .button, h1, p, h3, .random-circle, .project, .home , .navigation, .img-cv, .contact"
         );
 
         function toggleDarkMode() {
