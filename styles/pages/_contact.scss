@@ -62,7 +62,6 @@
                 content: "";
                 height: 70px;
                 width: 70px;
-                border: 1px $color-2 solid;
                 border-radius: 50%;
                 position: absolute;
                 top: -22px;
@@ -79,9 +78,7 @@
                 background: none;
                 font-family: $font-1;
                 font-size: 1.2rem;
-                border-bottom: 1px solid $color-2;
                 border-radius: 5px;
-
                 @media screen and (min-width: 1200px) {
                     font-size: 1.5rem;
                 }
@@ -102,7 +99,6 @@
             }
         }
         input.button {
-            background: $color-3;
             height: 55px;
             width: 126px;
             border-radius: 50px;
@@ -110,10 +106,10 @@
             font-size: 1.2rem;
             cursor: pointer;
             transition: 0.2s;
-            border: none;
+            border: none !important;
         }
     }
-    .formMessage {
+    .form-message {
         p {
             border-radius: 20px;
             text-align: center;
@@ -165,7 +161,6 @@
     }
 
     h4 {
-        color: $color-4;
         font-size: 1.3rem;
         font-weight: 200;
         margin-bottom: 10px;
@@ -203,6 +198,9 @@
         .content {
             position: absolute;
             right: 10px;
+        }
+        .deplacement {
+            font-size: 0.9rem;
         }
     }
     .phone {

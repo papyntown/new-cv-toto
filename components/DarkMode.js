@@ -4,6 +4,8 @@ function Darkmode() {
     const [isDarkMode, setIsDarkMode] = useState(
         typeof window !== "undefined" &&
             localStorage.getItem("isDarkMode") === "true"
+            ? true
+            : false
     );
     useEffect(() => {
         const elements = document.querySelectorAll(

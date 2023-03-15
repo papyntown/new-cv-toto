@@ -5,6 +5,9 @@ const nextConfig = {
         domains: ["localhost"],
         unoptimized: true,
     },
+    env: {
+        emailKey: "tQUM1GZWCUkTt-Ibe",
+    },
 };
 
 module.exports = nextConfig;
