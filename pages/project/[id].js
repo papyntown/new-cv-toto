@@ -11,6 +11,7 @@ const project = ({ project, projects }) => {
     const router = useRouter();
     const id = parseInt(router.query.id); // convertir en nombre entier
     const nextId = id;
+
     return (
         <div className="project">
             <Meta title={project.title} description={project.infos} />
