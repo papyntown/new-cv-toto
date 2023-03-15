@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 function Darkmode() {
     const [isDarkMode, setIsDarkMode] = useState(
@@ -9,7 +10,7 @@ function Darkmode() {
     );
     useEffect(() => {
         const elements = document.querySelectorAll(
-            "body,a, .button, h1, p, h3, .random-circle, .project, .home , .navigation, .img-cv, .contact"
+            " .sun, .moon,body,a, .button, h1, p, h3, .random-circle, .project, .home , .navigation, .img-cv, .contact"
         );
 
         function toggleDarkMode() {
@@ -44,6 +45,12 @@ function Darkmode() {
                     checked={isDarkMode}
                 />
                 <span className="slider"></span>
+                <span className="sun">
+                    <FaSun />{" "}
+                </span>
+                <span className="moon">
+                    <FaMoon />
+                </span>
             </label>
         </div>
     );

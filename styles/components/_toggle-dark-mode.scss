@@ -32,9 +32,9 @@
     content: "";
     height: 16px;
     width: 16px;
-    left: 4px;
+    left: 6px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transition: 0.4s;
     border-radius: 50%;
 }
@@ -63,5 +63,29 @@ input:checked + .slider:before {
 }
 
 .dark-mode input:checked + .slider:before {
-    background-color: #fff;
+    background-color: #ffffff;
+}
+
+input:checked + .sun {
+    width: 150px;
+}
+
+.sun {
+    position: relative;
+    top: 4px;
+    left: 3px;
+    transition: 0.2s;
+}
+.sun.light-mode {
+    opacity: 0;
+}
+
+.moon {
+    position: relative;
+    top: 4px;
+    left: 3px;
+    transition: 0.2s;
+}
+.moon.dark-mode {
+    opacity: 0;
 }
