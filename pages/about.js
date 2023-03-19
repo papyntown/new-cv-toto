@@ -15,10 +15,21 @@ import {
     FaEnvelope,
 } from "react-icons/fa";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 const about = () => {
+    const pageTransition = {
+        in: {
+            opacity: 1,
+            x: 0,
+        },
+        out: {
+            opacity: 0,
+            x: 150,
+        },
+    };
+
     const copied = (e) => {
-        console.log(e.target.textContent);
         toast.info(
             <>
                 <FaCopy />
@@ -37,7 +48,13 @@ const about = () => {
         );
     };
     return (
-        <div className="contact">
+        <motion.div
+            exit={"out"}
+            animate="in"
+            initial="out"
+            variants={pageTransition}
+            transition={{ duration: 0.5 }}
+            className="contact">
             <Meta
                 title={"Contactez-moi"}
                 description={
@@ -75,7 +92,9 @@ const about = () => {
                         <h4>
                             Email <FaEnvelope />
                         </h4>
-                        <CopyToClipboard text="0781647637" className="hover">
+                        <CopyToClipboard
+                            text="antony.baills66@gmail.com"
+                            className="hover">
                             <p onClick={(e) => copied(e)}>
                                 antony.baills66@gmail.com
                             </p>
@@ -87,7 +106,7 @@ const about = () => {
                     <p>Baills Antony - 2023</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

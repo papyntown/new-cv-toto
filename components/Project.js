@@ -12,7 +12,6 @@ const Project = ({ project }) => {
         setLeft(Math.floor(Math.random() * 200 + 900) + "px");
         setTop(Math.floor(Math.random() * 200 + 250) + "px");
         setSize("scale(" + (Math.random() + 0.1) + ")");
-        setPlusMinus(Math.random() < 0.5 ? 1 : -1);
     }, []);
     const transition = {
         ease: [0.03, 0.87, 0.73, 0.9],
@@ -37,8 +36,8 @@ const Project = ({ project }) => {
     const imgAnim = {
         initial: {
             opacity: 0,
-            x: Math.random() * 350 * plusMinus,
-            x: Math.random() * 120 * plusMinus,
+            x: Math.floor(Math.random() * 350 * (Math.random() < 0.4 ? 1 : -1)),
+            y: Math.floor(Math.random() * 120 * (Math.random() < 0.4 ? 1 : -1)),
         },
         visible: {
             opacity: 1,
