@@ -3,7 +3,7 @@ export const projectsData = [
         id: 1,
         title: "Fitforces",
         date: "Fevrier 2023",
-        languages: ["Nextjs", "Sass"],
+        languages: ["Nextjs", "Sass", "Redux"],
         infos: "Fitforces et un site qui répertorie chaque exercice accompagné d'une description claire et d'animations GIF utiles pour vous guider dans la bonne forme et la bonne technique.",
         img: "../Fitforces.png",
         link: "https://fitforces.vercel.app/",
@@ -19,6 +19,15 @@ export const projectsData = [
     },
     {
         id: 3,
+        title: "Crypto watch",
+        date: "Janvier 2022",
+        languages: ["React", "Sass"],
+        infos: "Crypto watch est un site qui répertorie la plupart des cryptomonnaies grâce à l’API CoinGecko et qui vous permettra d'un simple coup d'oeil de voir quelle crypto a augmenté ou diminué.",
+        img: "../Crypto-Watch.png",
+        link: "https://cryptowatch-one.vercel.app/",
+    },
+    {
+        id: 4,
         title: "React Movie",
         date: "Decembre 2022",
         languages: ["React", "Sass"],
@@ -26,14 +35,4 @@ export const projectsData = [
         img: "../React-movies.png",
         link: "https://papynlearn.online/",
     },
-    // {
-    //   id: 4,
-    //   title: "Creative Dev",
-    //   date: "Juillet 2020",
-    //   languages: ["Vue", "Php"],
-    //   infos:
-    //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    //   img: "./assets/img/projet-4.jpg",
-    //   link: "http://www.google.com",
-    // },
 ];
