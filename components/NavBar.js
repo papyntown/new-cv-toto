@@ -52,6 +52,18 @@ const NavBar = () => {
                                 }
                                 href="/project/[id]"
                                 as={`/project/3`}>
+                                Crypto Watch
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={
+                                    router.pathname == `/project/4}`
+                                        ? "nav-active hover"
+                                        : "hover"
+                                }
+                                href="/project/[id]"
+                                as={`/project/4`}>
                                 React Movies
                             </Link>
                         </li>

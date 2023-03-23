@@ -60,7 +60,7 @@ const MainContent = () => {
                         Mon CV en ligne présente mes projets en React et Next.js
                         pour démontrer mes compétences en développement web.
                         J'apprécie particulièrement travailler avec ces
-                        technologies pour leur flexibilité et évolutivité.
+                        technologies pour leur flexibilité et leur évolutivité.
                         J'espère que mes projets susciteront votre intérêt et
                         j'ai hâte de discuter de mes compétences avec vous.
                         Merci d'avoir parcouru mon CV en ligne et j'attends avec
