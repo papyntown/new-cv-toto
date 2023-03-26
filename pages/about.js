@@ -63,7 +63,7 @@ const about = () => {
             />
             <NavBar />
             <Darkmode />
-            <NavButtons left={`./project/3`} />
+            <NavButtons left={`./project/4`} />
             <ContactForm />
 
             <div className="contact-infos">
