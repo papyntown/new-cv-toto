@@ -4,18 +4,10 @@ import Meta from "@/components/Meta";
 import NavBar from "@/components/NavBar";
 import NavButtons from "@/components/NavButtons";
 import SocialNetwork from "@/components/SocialNetwork";
-import React from "react";
-import CopyToClipboard from "react-copy-to-clipboard";
-import {
-    FaCopy,
-    FaHome,
-    FaMailBulk,
-    FaPhone,
-    FaVoicemail,
-    FaEnvelope,
-} from "react-icons/fa";
-import { toast } from "react-toastify";
 import { motion } from "framer-motion";
+import CopyToClipboard from "react-copy-to-clipboard";
+import { FaCopy, FaEnvelope, FaPhone } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const about = () => {
     const pageTransition = {
@@ -54,7 +46,8 @@ const about = () => {
             initial="out"
             variants={pageTransition}
             transition={{ duration: 0.5 }}
-            className="contact">
+            className="contact"
+        >
             <Meta
                 title={"Contactez-moi"}
                 description={
@@ -67,7 +60,7 @@ const about = () => {
             <ContactForm />
 
             <div className="contact-infos">
-                <div className="address">
+                {/* <div className="address">
                     <div className="content">
                         <h4>
                             Adresse <FaHome />
@@ -76,7 +69,7 @@ const about = () => {
                         <p>66140 Canet-en-roussillion</p>
                         <p className="deplacement">Déménagement possible</p>
                     </div>
-                </div>
+                </div> */}
                 <div className="phone">
                     <div className="content">
                         <h4>
@@ -94,7 +87,8 @@ const about = () => {
                         </h4>
                         <CopyToClipboard
                             text="antony.baills66@gmail.com"
-                            className="hover">
+                            className="hover"
+                        >
                             <p onClick={(e) => copied(e)}>
                                 antony.baills66@gmail.com
                             </p>
