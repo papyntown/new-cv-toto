@@ -97,7 +97,7 @@ const about = () => {
                 </div>
                 <SocialNetwork />
                 <div className="credits">
-                    <p>Baills Antony - 2023</p>
+                    <p>Baills Antony - {new Date().getFullYear()}</p>
                 </div>
             </div>
         </motion.div>
