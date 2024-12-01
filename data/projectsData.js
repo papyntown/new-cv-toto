@@ -2,9 +2,9 @@ export const projectsData = [
     {
         id: 1,
         title: "FitnessHandler",
-        date: "🚧 En cours 🚧",
+        date: "Septembre 2024",
         languages: ["Nextjs", "Prisma", "Tailwind"],
-        infos: "FitnessHandler est une plateforme, accessible sur mobile, permettant aux utilisateurs de créer et de partager des programmes d'entraînement.",
+        infos: "FitnessHandler est une plateforme, accessible UNIQUEMENT sur mobile, permettant aux utilisateurs de créer et de partager des programmes d'entraînement.",
         img: "../FitnessHandler.png",
         link: "https://fitness-handler-nu.vercel.app/",
     },
